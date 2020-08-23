@@ -1,18 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <h1>提交到git的测试代码哦</h1>
+    <Father />
+    <Footer num='5' />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+ 
 
+import Footer from './components/Footer'
+import Father from './components/Father'
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components:{
+    Father,
+    Footer
+  },
+  data(){
+    return{
+      title:213
+    }
   }
 }
 </script>
